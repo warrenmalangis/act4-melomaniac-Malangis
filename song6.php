@@ -32,7 +32,7 @@
         <style>
             body {
                 background-image: url("images/guitar.jpg");
-                background-size: 1300px 2550px;
+                background-size: 1300px 3380px;
             }
         </style>
         <!-- About section-->
