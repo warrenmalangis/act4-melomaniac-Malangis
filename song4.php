@@ -1,3 +1,29 @@
+<?php
+//start the session
+SESSION_START();
+
+
+if (isset($_REQUEST['Homepage']) ===true){
+    session_destroy();
+    header("Location: index.php?Homepage");
+}else if (isset($_REQUEST['Dandelions']) ===true){
+    session_destroy();
+    header("Location: song2.php?Dandelions");
+}else if (isset($_REQUEST['HappierThanEver']) ===true){
+    session_destroy();
+    header("Location: song2.php?HappierThanEver");
+}else if (isset($_REQUEST['doubletake']) ===true){
+    session_destroy();
+    header("Location: song3.php?doubletake");
+}else if (isset($_REQUEST['EasyOnMe']) ===true){
+    session_destroy();
+    header("Location: song5.php?EasyOnMe");
+}else if (isset($_REQUEST['Crush']) ===true){
+    session_destroy();
+    header("Location: song6.php?Crush");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,16 +42,16 @@
             <div class="container px-4">
                 <div id="header">
                     <img src="assets/Logo.ico" height="40" width="35" alt=""></div>
-                <a class="navbar-brand" href="index.php"> WarLyrics Accord </a>
+                <a class="navbar-brand" style= "font-family: monospace; color: #d1d1e0;" href="?Homepage"> WarLyrics Accord </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link text-light" href="song1.php">Song 1</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="song2.php">Song 2</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="song3.php">Song 3</a></li>
-                         <li class="nav-item"><a class="nav-link text-light" href="song4.php">Song 4</a></li>
-                          <li class="nav-item"><a class="nav-link text-light" href="song5.php">Song 5</a></li>
-                          <li class="nav-item"><a class="nav-link text-light" href="song6.php">Next</a></li>
+                        <li class="nav-item"><a class="nav-link text-light"style= "font-family: cursive;"  href="?Dandelions">Song 1</a></li>
+                        <li class="nav-item"><a class="nav-link text-light"style= "font-family: cursive;" href="?HappierThanEver">Song 2</a></li>
+                        <li class="nav-item"><a class="nav-link text-light"style= "font-family: cursive;" href="?doubletake">Song 3</a></li>
+                         <li class="nav-item"><a class="nav-link text-blue"style= "font-family: cursive;" href="?Tahanan">Song 4</a></li>
+                          <li class="nav-item"><a class="nav-link text-light"style= "font-family: cursive;" href="?EasyOnMe">Song 5</a></li>
+                          <li class="nav-item"><a class="nav-link text-light"style= "font-family: cursive;" href="?Crush">Next</a></li>
                     </ul>
                 </div>
             </div>

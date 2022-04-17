@@ -1,3 +1,20 @@
+<?php
+//start the session
+SESSION_START();
+
+
+if (isset($_REQUEST['Homepage']) ===true){
+    session_destroy();
+    header("Location: index.php?Homepage");
+}else if (isset($_REQUEST['good4u']) ===true){
+    session_destroy();
+    header("Location: song7.php?good4u");
+}else if (isset($_REQUEST['Enchanted']) ===true){
+    session_destroy();
+    header("Location: song8.php?Enchanted");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -16,14 +33,14 @@
             <div class="container px-4">
                 <div id="header">
                     <img src="assets/Logo.ico" height="40" width="35" alt=""></div>
-                <a class="navbar-brand" href="index.php"> WarLyrics Accord </a>
+                <a class="navbar-brand"style= "font-family: monospace; color: #d1d1e0;" href="?Homepage"> WarLyrics Accord </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link text-light" href="song5.php">Previous</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="song6.php">Song 6</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="song7.php">Song 7</a></li>
-                         <li class="nav-item"><a class="nav-link text-light" href="song8.php">Song 8</a></li>
+                        <li class="nav-item"><a class="nav-link text-light"style= "font-family: cursive;" href="?EasyOnMe">Previous</a></li>
+                        <li class="nav-item"><a class="nav-link text-blue"style= "font-family: cursive;" href="?Crush">Song 6</a></li>
+                        <li class="nav-item"><a class="nav-link text-light"style= "font-family: cursive;" href="?good4u">Song 7</a></li>
+                         <li class="nav-item"><a class="nav-link text-light"style= "font-family: cursive;" href="?Enchanted">Song 8</a></li>
                  
                     </ul>
                 </div>
