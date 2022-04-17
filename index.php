@@ -78,7 +78,7 @@ else if (isset($_REQUEST['HappierThanEver']) ===true){
                 <br> 
                 </br>
                 <h1 class="fw-bolder" style="font-size: 6vw" style="background-color: black;" >Welcome to WarLyrics Accord</h1>
-                <p class="lead">Spreading amazing music that holistically touches everyone's heart</p>
+                <p class="leader">Spreading amazing music that holistically touches everyone's heart</p>
                 
             </div>
         </header>

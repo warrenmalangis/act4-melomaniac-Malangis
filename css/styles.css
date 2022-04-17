@@ -489,7 +489,11 @@ progress {
 [hidden] {
   display: none !important;
 }
-
+.leader {
+  font-size: 1.25rem;
+  font-family: 'Courier New', monospace;
+  font-weight: 300;
+}
 .lead {
   font-size: 1.25rem;
   font-family: 'Brush Script MT', cursive;

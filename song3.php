@@ -8,7 +8,7 @@ if (isset($_REQUEST['Homepage']) ===true){
     header("Location: index.php?Homepage");
 }else if (isset($_REQUEST['Dandelions']) ===true){
     session_destroy();
-    header("Location: song2.php?Dandelions");
+    header("Location: song1.php?Dandelions");
 }else if (isset($_REQUEST['HappierThanEver']) ===true){
     session_destroy();
     header("Location: song2.php?HappierThanEver");
@@ -66,11 +66,11 @@ if (isset($_REQUEST['Homepage']) ===true){
         <section id="songs">
             <div class="container px-4">
                 <div class="row gx-4 justify-content-center">
-                    <div class="col-lg-12 text-center">
+                    <div class="col-lg-12 text-center" style = 'font-family: Avantgarde TeX Gyre Adventor, sans-serif;'>
                     
                         <?php
 
-                        echo "<h2 class='text-white'>double take</h2>";
+                        echo "<h2 class='text-white' style= 'font-family: fantasy;'>double take</h2>";
                         echo "<p class='lead '>dhruv.</p>";
                         echo "<br/>";
                 
