@@ -6,6 +6,9 @@ SESSION_START();
 if (isset($_REQUEST['Homepage']) ===true){
     session_destroy();
     header("Location: index.php?Homepage");
+}else if (isset($_REQUEST['EasyOnMe']) ===true){
+    session_destroy();
+    header("Location: song5.php?EasyOnMe");
 }else if (isset($_REQUEST['good4u']) ===true){
     session_destroy();
     header("Location: song7.php?good4u");
